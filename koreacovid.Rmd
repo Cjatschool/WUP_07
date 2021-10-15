@@ -77,13 +77,19 @@ colPerc(table1)
 
 Based on this numerical table result it appears that of the people infected with Covid in South Korea, men died of Covid at almost twice the rate of women, with 64% of males infected with covid dying, while 36% of infected women died of Covid.
 
-Overall, the table shows that very few people in South Korea were infected with Covid, and out of the people who were infected, with women in South Korea dying 1.4% of the times, and South Korean men dying 3% of the times.
+Overall, the table shows that very few people in South Korea were infected with Covid, and out of the people who were infected, with women in South Korea dying 1.4% of the times, and South Korean men dying 3% of the times showing that men died at twice the rate as women.
 
 
 ## Inferential results 
 
 
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
 
+The p-value of 0.001 is low therefore we reject the null hypothesis. The death rate of covid in South Korea is dependent on sex.
 
 ## Conclusions
 
