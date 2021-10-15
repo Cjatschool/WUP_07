@@ -89,7 +89,11 @@ chisqtestGC(table1)
 fisher.test(table1)
 ```
 
-The p-value of 0.001 is low therefore we reject the null hypothesis. The death rate of covid in South Korea is dependent on sex.
+The chi-square test shows that the p-value of 0.001 is low therefore we reject the null hypothesis. The death rate of covid in South Korea is dependent on sex. 
+
+The fisher exact test shows that the odds ratio of men dying of covid was 2.3 times the rate that women died.
 
 ## Conclusions
+
+We reject the Null Hypothesis because the p value of 0.001 is low. This study showed that men in South Korea died of Covid at 2.3 higher than women showing that dying is dependent on sex in the case of covid meaning men were almost twice as likely to die of covid as women. The confidence interval of 1.4 shows that getting the same results of this study are likely. Overall in South Korea, there are fairly few cases of covid, so these results are based on the few people who were infected with covid. Of those infected, men died 64% while women died 34%.
 
