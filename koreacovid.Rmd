@@ -59,18 +59,25 @@ basicCC + geom_bar(stat="identity", position = "dodge")
 ```
 
 
-Based on this ggplot, it appears that of those who died of Covid in Korea, most were men. Women in Korea appear to to have died of Covid at almost half the rate as men. The right bar of the graph(red) shows that woman died around 39%, while men(blue) died around 64% of times among those infected with the Covid virus.
-
-
-
-  
-
+Based on this ggplot, it appears that of those who died of Covid in South Korea, most were men. Women in South Korea appear to to have died of Covid at almost half the rate as men. The right bar of the graph(red) shows that woman died around 39%, while men(blue) died around 64% of times among those infected with the Covid virus.
 
 
 
 
   
 ## Numerical results
+
+
+
+```{r}
+table1 <- xtabs(~result + Sex, data=kRdata)
+rowPerc(table1)
+colPerc(table1)
+```
+
+Based on this numerical table result it appears that of the people infected with Covid in South Korea, men died of Covid at almost twice the rate of women, with 64% of males infected with covid dying, while 36% of infected women died of Covid.
+
+Overall, the table shows that very few people in South Korea were infected with Covid, and out of the people who were infected, with women in South Korea dying 1.4% of the times, and South Korean men dying 3% of the times.
 
 
 ## Inferential results 
